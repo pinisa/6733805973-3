@@ -1,11 +1,11 @@
-package com.example.lab03.controller;
+package com.example.lab04.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * HelloController — REST Controller ตัวอย่างสำหรับ Lab03
+ * HelloController — REST Controller ตัวอย่างสำหรับ Lab04
  *
  * TODO: แก้ไขข้อมูลส่วนตัวด้านล่างให้เป็นของคุณ
  *   - NAME    : ชื่อ-สกุล ของนักศึกษา
@@ -27,10 +27,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class HelloController {
 
-    // ── ข้อมูลนักศึกษา ── แก้ไขตรงนี้ ──────────────────────────────────────
-    private static final String NAME    = "Your Name Here";     // TODO: ใส่ชื่อจริง
-    private static final String ID      = "xxxx";               // TODO: ใส่รหัสนักศึกษา
-    private static final String SECTION = "x";                  // TODO: ใส่เลข Section
+    // ── ข้อมูลนักศึกษา ── แก้ไขเรียบร้อยแล้วค่ะ ──────────────────────────────
+    private static final String NAME    = "พินิสา สุทธมาตย์";     // TODO: ใส่ชื่อจริง
+    private static final String ID      = "673380597-3";               // TODO: ใส่รหัสนักศึกษา
+    private static final String SECTION = "3";                  // TODO: ใส่เลข Section
     // ─────────────────────────────────────────────────────────────────────────
 
     /**
@@ -59,7 +59,7 @@ public class HelloController {
     @GetMapping("/info")
     public String info() {
         return String.format(
-            "Project: Lab03 Spring Boot | Name: %s | ID: %s | Section: %s",
+            "Project: Lab04 Spring Boot | Name: %s | ID: %s | Section: %s",
             NAME, ID, SECTION
         );
     }
